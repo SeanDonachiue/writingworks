@@ -1,0 +1,20 @@
+student log in
+
+"do their homework"	- what form does this take? A quiz or test? a file upload?
+autograding against a rubric?
+
+tutor can see their progress
+
+Blog posts. w/ comments?
+
+Stripped down google doc/ private live chatrooms, basically. sort of. 
+
+
+TODO
+
+Init mongodb to link with the data folder in the project root
+
+login component in React app.js
+
+endpoint for logging in (take get, compare data to usertable)
+endpoint for making a user (take post, add data to usertable)

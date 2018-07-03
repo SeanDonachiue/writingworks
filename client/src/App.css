@@ -1,0 +1,78 @@
+/* Everything inside app div is centered. This won't stay*/
+.App {
+ 
+}
+.App-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: #222;
+  height: 50px;
+  color: white;
+}
+.App-logo {
+  flex-grow: 0.5;
+  height: 40px;
+  width: 40px;
+  padding: 5px 0px 5px 0px;
+}
+/* need a vertical alignment hack here */
+.App-title {
+  flex-grow: 4;
+  font-size: 1.5em;
+}
+
+/*contains: livedoc component*/
+.App-intro {
+  font-size: large;
+  
+  text-align: center;
+}
+/*consider decomposing this div so that login/out buttons
+can be horizontally aligned*/
+#loginform, .logged-in-message {
+  padding: 5px;
+}
+.login-btn, #logout-btn {
+  background-color: skyblue;
+  /*border-color: #5e2a41;*/
+  border-radius: 8px;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 14px;
+  font-size: 1em;
+  width: 100%;
+}
+.new-doc-button {
+
+}
+.doc-editor {
+  margin-top: 25px;
+  height: 80vh;
+}
+/* div containing textarea 
+    width should be width of the containing elem
+*/
+.doc-textarea {
+  max-width: 55.55%;
+  height: 100%;
+  margin: 0px auto;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+/* actual textarea */
+#doc-content {
+  float:left;
+  width: 100%;
+  height: 100%;
+  min-height: 75px;
+  outline: none;
+  border: 1px solid grey;
+}
+/* curious to know if this works as intended */
+textarea {
+  resize: none;
+  overflow: auto;
+}
